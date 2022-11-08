@@ -1,0 +1,61 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/train_test_split.py
+    deps:
+    - path: src/train_test_split.py
+      md5: 320327fc90cddc60e609dcb5b22f30ac
+      size: 2068
+    outs:
+    - path: assets/original_data
+      md5: fcbabf8cb2b1a715bc0b74c5050fbd23.dir
+      size: 13567717
+      nfiles: 1
+    - path: assets/train_test
+      md5: f315b06175a00357f7b0b0b2af770823.dir
+      size: 9264999
+      nfiles: 2
+  preprocessing:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: assets/train_test
+      md5: f315b06175a00357f7b0b0b2af770823.dir
+      size: 9264999
+      nfiles: 2
+    - path: src/preprocessing.py
+      md5: 0cc5dbcdd4f0a703492e88e26f47e367
+      size: 4221
+    outs:
+    - path: assets/processed
+      md5: e21e7c1c9e039fe07475d5512be467d1.dir
+      size: 4863384
+      nfiles: 2
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - path: assets/processed
+      md5: e21e7c1c9e039fe07475d5512be467d1.dir
+      size: 4863384
+      nfiles: 2
+    - path: src/feature_engineering.py
+      md5: 1dd5e383db99a0fceb372dc37e7d8d7f
+      size: 4003
+    outs:
+    - path: assets/features
+      md5: f19b25693e4aaeadf9dd3a3d36904b9d.dir
+      size: 6930153
+      nfiles: 4
+  model_training_evaluation:
+    cmd: python src/model_training_evaluation.py
+    deps:
+    - path: assets/features
+      md5: f19b25693e4aaeadf9dd3a3d36904b9d.dir
+      size: 6930153
+      nfiles: 4
+    - path: src/model_training_evaluation.py
+      md5: 72e055879a393f4e7f602555bc8ee3ec
+      size: 7374
+    outs:
+    - path: assets/metrics.json
+      md5: 183b07ec6600803142aa30f82e18048d
+      size: 108

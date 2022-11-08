@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Machine%20Learning/Machine%20Learning/MlOps/Complete/Fraud_Transactions_Prediction/mlruns/0/74c3599056124a67a78b6c6d754c303b/artifacts
+end_time: 1667916586630
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 74c3599056124a67a78b6c6d754c303b
+run_name: gentle-squirrel-142
+run_uuid: 74c3599056124a67a78b6c6d754c303b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667916582915
+status: 3
+tags: []
+user_id: Admin

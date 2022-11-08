@@ -1,0 +1,40 @@
+2022-11-08 22:08:56,075 - INFO - ###### Train Test Split ######
+2022-11-08 22:08:56,079 - DEBUG - Starting new HTTPS connection (1): drive.google.com:443
+2022-11-08 22:08:56,784 - DEBUG - https://drive.google.com:443 "GET /uc?export=download&id=1XFHpCrzi3VIavxfHWt5Wj9b3EC-1sGh9 HTTP/1.1" 303 0
+2022-11-08 22:08:56,786 - DEBUG - Starting new HTTPS connection (1): doc-0g-ac-docs.googleusercontent.com:443
+2022-11-08 22:08:57,332 - DEBUG - https://doc-0g-ac-docs.googleusercontent.com:443 "GET /docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/k2vd56hg0cemisafav7h5r0i5857pqqu/1667916525000/05967705422419858981/*/1XFHpCrzi3VIavxfHWt5Wj9b3EC-1sGh9?e=download&uuid=d0e0fdf3-b980-4618-bc9a-88296762413c HTTP/1.1" 200 13567717
+2022-11-08 22:09:17,513 - INFO - Data is loaded succesfully.
+2022-11-08 22:09:17,523 - INFO - Droping Duplicates ... 
+2022-11-08 22:09:17,725 - INFO - Dropped 12110 duplicates.
+2022-11-08 22:09:18,458 - INFO - Train shape: (149388, 7)
+2022-11-08 22:09:18,458 - INFO - Test shape: (37347, 7)
+2022-11-08 22:09:18,458 - INFO - Train test splitted sucessfullt at ../../assets/train_test_split
+
+2022-11-08 22:09:19,695 - INFO - ##### Preprocessing #####
+2022-11-08 22:09:19,821 - INFO - [Train]
+2022-11-08 22:09:19,821 - INFO - Resolving Missing value(s) ... 
+2022-11-08 22:09:19,839 - INFO - No missing values.
+2022-11-08 22:09:19,839 - INFO - Data consistency imputation ... 
+2022-11-08 22:09:20,906 - WARNING - Removed 91634 rows (38.660401103167594%).
+2022-11-08 22:09:20,906 - INFO - New dataframe shape (57754, 8)
+2022-11-08 22:09:20,907 - INFO - [Test]
+2022-11-08 22:09:20,907 - INFO - Data consistency imputation ... 
+2022-11-08 22:09:21,192 - WARNING - Removed 23006 rows (38.39933595737275%).
+2022-11-08 22:09:21,192 - INFO - New dataframe shape (14341, 8)
+2022-11-08 22:09:21,192 - INFO - Processed Train shape: (57754, 8)
+2022-11-08 22:09:21,192 - INFO - Processed Test shape: (14341, 8)
+2022-11-08 22:09:21,539 - INFO - Processed dataset stored in ../../assets/processed
+
+2022-11-08 22:09:22,409 - INFO - ##### Feature Engineering #####
+2022-11-08 22:09:23,762 - INFO - Generated 2 new feature(s)
+2022-11-08 22:09:23,762 - INFO - New features: Index(['Amount_pct_to_sender', 'Amount_pct_to_beneficiary'], dtype='object')
+2022-11-08 22:09:24,258 - INFO - Total features: 9
+2022-11-08 22:09:24,258 - INFO - Dataset stored in ../../assets/features
+
+2022-11-08 22:09:28,603 - INFO - #### Model Training and Evaluation ####
+2022-11-08 22:09:42,741 - INFO - Registered first model
+
+2022-11-08 22:09:42,808 - DEBUG - Popen(['git', 'version'], cwd=D:\Machine Learning\Machine Learning\MlOps\Complete\Fraud_Transactions_Prediction, universal_newlines=False, shell=None, istream=None)
+2022-11-08 22:09:42,841 - DEBUG - Popen(['git', 'version'], cwd=D:\Machine Learning\Machine Learning\MlOps\Complete\Fraud_Transactions_Prediction, universal_newlines=False, shell=None, istream=None)
+2022-11-08 22:09:42,878 - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'The system cannot find the file specified', None, 2, None)
+2022-11-08 22:09:42,879 - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=D:\Machine Learning\Machine Learning\MlOps\Complete\Fraud_Transactions_Prediction, universal_newlines=False, shell=None, istream=<valid stream>)

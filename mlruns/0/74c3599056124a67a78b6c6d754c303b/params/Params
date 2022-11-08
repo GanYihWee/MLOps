@@ -1,0 +1,1 @@
+{'n_estimators': 280, 'learning_rate': 0.2867795974200207, 'num_leaves': 20, 'max_depth': 12, 'min_data_in_leaf': 2900, 'lambda_l1': 0, 'lambda_l2': 15, 'min_gain_to_split': 12.200492410965373, 'bagging_fraction': 0.9, 'bagging_freq': 7, 'feature_fraction': 0.6000000000000001}
