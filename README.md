@@ -15,4 +15,10 @@ Step5: Better model will store in MLFlow for versioning of performance and param
 
 Step6: Deploy using BentoML by API service or docker.
 
+
+The whole model can be reproduced by a command with `dvc.yaml` and `src` folder:
+```
+$ dvc repro dvc.yaml
+```
+
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/102400483/200590588-fe467efc-4d19-4db3-b5e6-b06968e77246.png)
